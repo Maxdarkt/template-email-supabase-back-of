@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+	<body>	
+	
+		<h2>Login</h2>
+	
+		<p><a href="{{ .RedirectTo }}">Suivez ce lien</a></p>
+		<p>{{ .ConfirmationURL }} : URL to accept the invitation to create an account</p>
+		<p>{{ .Token }} : The 6-digit numeric email OTP</p>
+		<p>{{ .TokenHash }} : The hashed token used in the URL</p>
+		<p>{{ .SiteURL }} : The URL of the site</p>
+		<p>{{ .Email }} : The user's email address</p>
+		<p>{{ .Data }} : The user's user_metadata</p>
+		<p>{{ .RedirectTo }} : The URL of redirectTo passed in options</p>
+
+		<p>MT-DEVELOP</p>
+
+	</body>
+</html>
