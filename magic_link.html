@@ -3,15 +3,7 @@
 	
 		<h2>Login</h2>
 	
-		<p><a href="{{ .RedirectTo }}?token_hash={{ .TokenHash }}">Suivez ce lien</a></p>
-
-		{{ .ConfirmationURL }} : URL to confirm the e-mail address for the new account
-		{{ .Token }} : The 6-digit numeric email OTP
-		{{ .TokenHash }} : The hashed token used in the URL
-		{{ .SiteURL }} : The URL of the site
-		{{ .Email }} : The user's email address
-		{{ .Data }} : The user's user_metadata
-		{{ .RedirectTo }} : The URL of emailRedirectTo passed in options
+		<p><a href="http://213.44.138.124:8000/auth/v1/verify?token={{ .TokenHash }}&type=magiclink&redirect_to={{ .RedirectTo }">Suivez ce lien</a></p>
 
 		<p>MT-DEVELOP</p>
 
